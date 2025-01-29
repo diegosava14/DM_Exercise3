@@ -1,0 +1,69 @@
+## DIGITS
+
+#PCA 
+
+Best Parameters: {'knn__metric': 'euclidean', 'knn__n_neighbors': 4, 'knn__weights': 'distance', 'pca__n_components': 38}
+Best Cross-Validation Accuracy: 0.9777333333333331
+Test Accuracy with Best Model: 0.9777777777777777
+
+Performing Compute Test on the best model:
+Mean Cross-Validation Accuracy: 0.9785142857142857
+
+
+#LDA 
+
+Best Parameters: {'knn__metric': 'manhattan', 'knn__n_neighbors': 3, 'knn__weights': 'distance', 'lda__n_components': 8}
+Best Cross-Validation Accuracy: 0.9625777777777778
+Test Accuracy with Best Model: 0.9611111111111111
+
+Performing Compute Test on the best model:
+Mean Cross-Validation Accuracy: 0.959415873015873
+
+
+#SVD
+
+Best Parameters: {'knn__metric': 'euclidean', 'knn__n_neighbors': 4, 'knn__weights': 'distance', 'svd__n_components': 24}
+Best Cross-Validation Accuracy: 0.9777333333333331
+Test Accuracy with Best Model: 0.975925925925926
+
+Performing Compute Test on the best model:
+Mean Cross-Validation Accuracy: 0.9729460317460319
+
+
+Best Method: PCA
+Best Parameters for PCA: {'knn__metric': 'euclidean', 'knn__n_neighbors': 4, 'knn__weights': 'distance', 'pca__n_components': 38}
+Best Cross-Validation Accuracy for PCA: 0.9777333333333331
+Test Accuracy for PCA: 0.9777777777777777
+Cross-Validation Accuracy for PCA: 0.9785142857142857
+
+
+#MLP
+
+Best Parameters for MLP: {'mlp__hidden_layer_sizes': (150, 150), 'mlp__learning_rate_init': 0.02, 'mlp__max_iter': 100, 'pca__n_components': 54}
+Best Cross-Validation Accuracy for MLP: 0.9753206349206348
+Test Accuracy for MLP: 0.975925925925926
+Mean Cross-Validation Accuracy: 0.9705650793650793
+Mean Cross-Validation Accuracy for MLP: 0.9705650793650793
+
+
+#Ensemble
+
+Mean Cross-Validation Accuracy: 0.5560899260102448
+Mean Cross-Validation Accuracy: 0.9085088218554354
+Mean Cross-Validation Accuracy for Bagging: 0.9013216973376336
+Mean Cross-Validation Accuracy for AdaBoost: 0.5560899260102448
+Mean Cross-Validation Accuracy for Gradient Boosting: 0.9085088218554354
+
+Best Ensemble Method: Gradient Boosting
+Best Parameters: {'gb__learning_rate': 0.1, 'gb__max_depth': 3, 'gb__n_estimators': 100, 'pca__n_components': 30}
+Test Accuracy: 0.924074074074074
+Mean Cross-Validation Accuracy: 0.9084993359893758
+Mean Cross-Validation Accuracy for Best Model: 0.9084993359893758
+
+
+#########################################################################################################
+
+## 20
+
+
+
