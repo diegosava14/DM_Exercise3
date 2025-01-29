@@ -63,7 +63,77 @@ Mean Cross-Validation Accuracy for Best Model: 0.9084993359893758
 
 #########################################################################################################
 
-## 20
+## Iris
+
+#PCA 
+
+Best Parameters: {'knn__metric': 'euclidean', 'knn__n_neighbors': 14, 'knn__weights': 'uniform', 'pca__n_components': 4}
+Best Cross-Validation Accuracy: 0.9445454545454547
+Test Accuracy with Best Model: 1.0
+
+Performing Compute Test on the best model:
+Mean Cross-Validation Accuracy: 0.9236363636363636
+
+
+#LDA 
+
+Best Parameters: {'knn__metric': 'euclidean', 'knn__n_neighbors': 6, 'knn__weights': 'uniform', 'lda__n_components': 2}
+Best Cross-Validation Accuracy: 0.9727272727272727
+Test Accuracy with Best Model: 1.0
+
+Performing Compute Test on the best model:
+Mean Cross-Validation Accuracy: 0.9718181818181819
+
+
+#SVD
+
+Best Parameters: {'knn__metric': 'euclidean', 'knn__n_neighbors': 14, 'knn__weights': 'uniform', 'svd__n_components': 4}
+Best Cross-Validation Accuracy: 0.9445454545454547
+Test Accuracy with Best Model: 1.0
+
+Performing Compute Test on the best model:
+Mean Cross-Validation Accuracy: 0.9236363636363636
+
+
+Best Method: PCA
+Best Parameters for PCA: {'knn__metric': 'euclidean', 'knn__n_neighbors': 14, 'knn__weights': 'uniform', 'pca__n_components': 4}
+Best Cross-Validation Accuracy for PCA: 0.9445454545454547
+Test Accuracy for PCA: 1.0
+Cross-Validation Accuracy for PCA: 0.9236363636363636
+
+
+#MLP
+
+Best Parameters for MLP: {'mlp__hidden_layer_sizes': (150, 150), 'mlp__learning_rate_init': 0.01, 'mlp__max_iter': 100, 'pca__n_components': 4}
+Best Cross-Validation Accuracy for MLP: 0.9536363636363637
+Test Accuracy for MLP: 1.0
+Mean Cross-Validation Accuracy: 0.9345454545454546
+Mean Cross-Validation Accuracy for MLP: 0.9345454545454546
+
+
+#Ensemble
+
+Best Parameters for Bagging: {'bagging__estimator__max_depth': 5, 'bagging__n_estimators': 10, 'pca__n_components': 3}
+Best Cross-Validation Accuracy for Bagging: 0.9238095238095237
+Best Parameters for AdaBoost: {'adaboost__learning_rate': 0.01, 'adaboost__n_estimators': 50, 'pca__n_components': 2}
+Best Cross-Validation Accuracy for AdaBoost: 0.8952380952380953
+Best Parameters for Gradient Boosting: {'gb__learning_rate': 0.1, 'gb__max_depth': 3, 'gb__n_estimators': 50, 'pca__n_components': 3}
+Best Cross-Validation Accuracy for Gradient Boosting: 0.9142857142857143
+Test Accuracy for Bagging: 0.9777777777777777
+Test Accuracy for AdaBoost: 0.9333333333333333
+Test Accuracy for Gradient Boosting: 0.9777777777777777
+Mean Cross-Validation Accuracy: 0.9142857142857143
+Mean Cross-Validation Accuracy: 0.8857142857142856
+Mean Cross-Validation Accuracy: 0.9142857142857143
+Mean Cross-Validation Accuracy for Bagging: 0.9142857142857143
+Mean Cross-Validation Accuracy for AdaBoost: 0.8857142857142856
+Mean Cross-Validation Accuracy for Gradient Boosting: 0.9142857142857143
+
+Best Ensemble Method: Bagging
+Best Parameters: {'bagging__estimator__max_depth': 5, 'bagging__n_estimators': 10, 'pca__n_components': 3}
+Test Accuracy: 0.9777777777777777
+Mean Cross-Validation Accuracy: 0.9142857142857143
+Mean Cross-Validation Accuracy for Best Model: 0.9142857142857143
 
 
 
